@@ -22,3 +22,9 @@
 [submodule "bundle/fireplace"]
 	path = bundle/fireplace
 	url = git://github.com/tpope/vim-fireplace.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule "bundle/classpath"]
+	path = bundle/classpath
+	url = https://github.com/tpope/vim-classpath.git
