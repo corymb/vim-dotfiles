@@ -198,3 +198,5 @@ au Syntax * RainbowParenthesesLoadBraces
 " None of this 'bottom-up' nonsense:
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
+" Flake8:
+autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
