@@ -28,3 +28,6 @@
 [submodule "bundle/classpath"]
 	path = bundle/classpath
 	url = https://github.com/tpope/vim-classpath.git
+[submodule "bundle/jinja2"]
+	path = bundle/jinja2
+	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
