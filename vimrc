@@ -3,10 +3,12 @@
 "#####################"
 
 set background=dark
-colorscheme solarized
 
 " Set terminal colours:
 set t_Co=256
+
+" Colorscheme must be after t_Co:
+colorscheme solarized
 
 " Syntax highlighting (enable keeps colour settings):
 syntax on
@@ -162,6 +164,27 @@ filetype on
 map <F2> :NERDTreeToggle<cr>
 let NERDTreeQuitOnOpen = 1
 let NERDTreeIgnore=['\.pyc$']
+
+" MRU:
+" Function to toggle MRU: 
+function! s:Mru_Window_Toggle()
+  let wnum = bufwinnr('__MRU_Files__')
+    " Open or jump to the MRU window:
+    MRU
+  if wnum != -1
+    " MRU window was already open. Close it:
+    close
+  endif
+endfunction
+
+"Map MRU (Most Recently Used) to <F3>:
+nnoremap <silent> <F3> :call <SID>Mru_Window_Toggle()<CR>
+
+" tComment:
+map <leader>cc :TComment<cr>
+map <leader>cb :TCommentBlock<cr>
+map <leader>ci :TCommentInline<cr>
+map <leader>cr :TCommentRight<cr>
 
 " Because Rainbow-parens is a little bitch:
 au VimEnter * RainbowParenthesesToggle
