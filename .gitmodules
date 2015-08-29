@@ -10,12 +10,14 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
+	ignore = dirty
 [submodule "bundle/airline"]
 	path = bundle/airline
 	url = https://github.com/bling/vim-airline.git
 [submodule "bundle/clojure-static"]
 	path = bundle/clojure-static
 	url = git://github.com/guns/vim-clojure-static.git
+	ignore = dirty
 [submodule "bundle/rainbow-parens"]
 	path = bundle/rainbow-parens
 	url = git://github.com/kien/rainbow_parentheses.vim.git
@@ -34,6 +36,7 @@
 [submodule "bundle/paredit"]
 	path = bundle/paredit
 	url = https://github.com/vim-scripts/paredit.vim.git
+	ignore = dirty
 [submodule "bundle/mru"]
 	path = bundle/mru
 	url = https://github.com/vim-scripts/mru.vim.git
