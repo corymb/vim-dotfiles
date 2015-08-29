@@ -132,9 +132,11 @@ map § $
 map <F1> <Nop>
 map Q <Nop>
 
-
 " Close current buffer:
 map <leader>bd :bd<CR>
+
+" Un-highlight last search:
+map <leader>z :noh<CR>
 
 "################"
 " Misc Functions "
