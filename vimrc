@@ -162,3 +162,9 @@ filetype on
 map <F2> :NERDTreeToggle<cr>
 let NERDTreeQuitOnOpen = 1
 let NERDTreeIgnore=['\.pyc$']
+
+" Because Rainbow-parens is a little bitch:
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
