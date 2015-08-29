@@ -97,7 +97,7 @@ set clipboard=unnamed
 " Remember last position in file:
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-" Bash like keys for the command line:
+" Emacs bindings for the command line:
 cnoremap <C-A>        <Home>
 cnoremap <C-E>        <End>
 cnoremap <C-K>        <C-U>
