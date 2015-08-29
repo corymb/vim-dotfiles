@@ -2,7 +2,7 @@
 " Appearance Settings "
 "#####################"
 
-set background=light
+set background=dark
 colorscheme solarized
 
 " Set terminal colours:
@@ -68,11 +68,42 @@ set smartcase     " case insensitive if lowercase
 set hlsearch      " Highlight search terms
 set incsearch     " Show search matches typed
 
+" Status line and user interface:
+set laststatus=2
+set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]\ %{fugitive#statusline()}
+set ruler "Always show current position
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+set showmatch
+
+" Wildmenu
+set wildmenu
+set wildmode=longest:full,full
+set wildignore+=*~,*.aux,tags
+
+" Tags
+set tags+=../tags,../../tags,../../../tags,../../../../tags
+
+" Viminfo and history:
+set history=50
+set viminfo='100,f1,<50,!,h,s10
+
+" Hide buffer when not in window
+set bufhidden=hide
+
 " Clipboard:
 set clipboard=unnamed
 
 " Remember last position in file:
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" Bash like keys for the command line:
+cnoremap <C-A>        <Home>
+cnoremap <C-E>        <End>
+cnoremap <C-K>        <C-U>
+
+" Tab completion and documentation
+au FileType python set omnifunc=pythoncomplete#Complete
 
 "#########################"
 " Custom Editor Shortcuts "
@@ -98,3 +129,31 @@ map § $
 " Unmapping superfluous commands:
 map <F1> <Nop>
 map Q <Nop>
+
+
+" Close current buffer:
+map <leader>bd :bd<CR>
+
+"################"
+" Misc Functions "
+"################"
+
+" Delete trailing white space:
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+
+autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd BufWrite *.rb :call DeleteTrailingWS()
+
+"#########"
+" Plugins "
+"#########"
+
+" Turn filetype off for Pathogen:
+filetype off
+call pathogen#infect()
+call pathogen#helptags()
+filetype on
