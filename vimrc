@@ -193,3 +193,8 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Supertab:
+" None of this 'bottom-up' nonsense:
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
