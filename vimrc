@@ -203,3 +203,6 @@ autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
 
 " Fireplace:
 nnoremap <leader>e :Eval<cr>
+
+" Remap ctrlp for command-t binding:
+nmap <leader>t :CtrlP<cr>
