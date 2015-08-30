@@ -200,3 +200,6 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " Flake8:
 autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
+
+" Fireplace:
+nnoremap <leader>e :Eval<cr>
