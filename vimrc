@@ -219,4 +219,4 @@ nmap <leader>T :vs<cr><c-w><c-w>:CtrlP<cr>
 
 " Run commands in a tmux split:
 nmap <leader>r :VimuxPromptCommand<cr>
-nmap <leader>R :VimuxPromptCommand("workon giz && python manage.py test")<cr>
+nmap <leader>R :RunCurrentNoseTests<cr>
