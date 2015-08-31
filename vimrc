@@ -142,6 +142,9 @@ map <leader>bd :bd<CR>
 " Un-highlight last search:
 map <leader>z :noh<CR>
 
+" Add assertion error with keyboard shortcut:
+map <leader>a Oassert False, 9<esc>:w<CR>
+
 "################"
 " Misc Functions "
 "################"
