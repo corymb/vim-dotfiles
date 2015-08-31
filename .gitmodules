@@ -58,3 +58,4 @@
 [submodule "bundle/vimux-nose-test"]
 	path = bundle/vimux-nose-test
 	url = https://github.com/pitluga/vimux-nose-test.git
+    ignore = dirty
