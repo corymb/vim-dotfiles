@@ -215,3 +215,4 @@ nnoremap <leader>e :Eval<cr>
 
 " Remap ctrlp for command-t binding:
 nmap <leader>t :CtrlP<cr>
+nmap <leader>T :vs<cr><c-w><c-w>:CtrlP<cr>
