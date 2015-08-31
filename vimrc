@@ -14,6 +14,10 @@ colorscheme solarized
 syntax on
 syntax enable
 
+" 80 character text highlight:
+highlight OverLength ctermbg=red ctermfg=white
+match OverLength /\%79v.\+/
+
 "######################"
 " General Vim Settings "
 "######################"
@@ -181,6 +185,11 @@ endfunction
 
 "Map MRU (Most Recently Used) to <F3>:
 nnoremap <silent> <F3> :call <SID>Mru_Window_Toggle()<CR>
+
+" Tagbar:
+map <F4> :TagbarToggle<CR>
+let g:tagbar_foldlevel = 2
+let g:tagbar_autofocus = 1
 
 " tComment:
 map <leader>cc :TComment<cr>
