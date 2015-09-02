@@ -59,3 +59,6 @@
 	path = bundle/vimux-nose-test
 	url = https://github.com/pitluga/vimux-nose-test.git
     ignore = dirty
+[submodule "bundle/vim-python-pep8-indent"]
+	path = bundle/vim-python-pep8-indent
+	url = https://github.com/hynek/vim-python-pep8-indent.git

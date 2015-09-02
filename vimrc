@@ -213,13 +213,18 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " Flake8:
 autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
 
+" Run on save:
+autocmd BufWritePost *.py call Flake8()
+
 " Fireplace:
 nnoremap <leader>e :Eval<cr>
 
 " Remap ctrlp for command-t binding:
 nmap <leader>t :CtrlP<cr>
 nmap <leader>T :vs<cr><c-w><c-w>:CtrlP<cr>
+" Explicitly set this to prevent reindexing:
+" let g:ctrlp_cache_dir = '/Users/dave/.cache/ctrlp'
 
 " Run commands in a tmux split:
-nmap <leader>r :VimuxPromptCommand<cr>
-nmap <leader>R :RunCurrentNoseTests<cr>
+nmap <leader>R :VimuxPromptCommand<cr>
+nmap <leader>r :RunCurrentNoseTests<cr>
