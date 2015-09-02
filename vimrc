@@ -16,7 +16,7 @@ syntax enable
 
 " 80 character text highlight:
 highlight OverLength ctermbg=red ctermfg=white
-match OverLength /\%79v.\+/
+match OverLength /\%80v.\+/
 
 "######################"
 " General Vim Settings "
