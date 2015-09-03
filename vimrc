@@ -228,3 +228,6 @@ nmap <leader>T :vs<cr><c-w><c-w>:CtrlP<cr>
 " Run commands in a tmux split:
 nmap <leader>R :VimuxPromptCommand<cr>
 nmap <leader>r :RunCurrentNoseTests<cr>
+
+" Added Gundo:
+map <F6> :GundoToggle<CR>
