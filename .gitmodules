@@ -33,10 +33,6 @@
 [submodule "bundle/jinja2"]
 	path = bundle/jinja2
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
-[submodule "bundle/paredit"]
-	path = bundle/paredit
-	url = https://github.com/vim-scripts/paredit.vim.git
-	ignore = dirty
 [submodule "bundle/mru"]
 	path = bundle/mru
 	url = https://github.com/vim-scripts/mru.vim.git
