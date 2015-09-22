@@ -15,8 +15,8 @@ syntax on
 syntax enable
 
 " 80 character text highlight:
-highlight OverLength ctermbg=red ctermfg=white
-match OverLength /\%80v.\+/
+" highlight OverLength ctermbg=red ctermfg=white
+" match OverLength /\%80v.\+/
 
 "######################"
 " General Vim Settings "
@@ -136,6 +136,9 @@ map § $
 map <F1> <Nop>
 map Q <Nop>
 
+" Toggle bg color:
+map <Leader>bg :let &background = ( &background == "dark"? "light" : "dark" )<CR>
+
 " Close current buffer:
 map <leader>bd :bd<CR>
 
@@ -231,7 +234,7 @@ autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
 autocmd BufWritePost *.py call Flake8()
 
 " Fireplace:
-nnoremap <leader>e :Eval<cr>
+nmap <leader>e cp%
 
 " Remap ctrlp for command-t binding:
 nmap <leader>t :CtrlP<cr>
