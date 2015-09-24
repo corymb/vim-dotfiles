@@ -31,6 +31,9 @@ set hidden
 " Hide buffer when not in window:
 set bufhidden=hide
 
+" Make vertical splits default to the right hand side:
+set spr
+
 " Disable backup/swap files:
 set nobackup
 set noswapfile
@@ -222,6 +225,9 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Airline:
+let g:airline_theme='solarized'
 
 " Supertab:
 " None of this 'bottom-up' nonsense:
