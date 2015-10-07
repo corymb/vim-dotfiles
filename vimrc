@@ -61,7 +61,7 @@ set nostartofline
 " Enable line numbers:
 set number
 
-" Tab stuff (mostly for Python):
+" Tab stuff (Python orientated):
 set smarttab
 set tabstop=4
 set expandtab
