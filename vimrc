@@ -129,11 +129,16 @@ nmap <leader>s :w<cr>
 map <right> :bn<cr>
 map <left> :bp<cr>
 
+" Map alt-arrows to switch between open tabs:
+nnoremap <leader>tp :tabprevious<CR>
+nnoremap <leader>tn :tabnext<CR>
+
 " Remap 0 to start at begining of text:
 map 0 ^
 
 " and § to end ($):
 map § $
+map ` $
 
 " Unmapping superfluous commands:
 map <F1> <Nop>
@@ -234,7 +239,7 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
 
 " Run on save:
-autocmd BufWritePost *.py call Flake8()
+" autocmd BufWritePost *.py call Flake8()
 
 " Fireplace:
 nmap <leader>e cp%
