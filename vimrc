@@ -231,10 +231,6 @@ au Syntax * RainbowParenthesesLoadBraces
 " Airline:
 let g:airline_theme='solarized'
 
-" Supertab:
-" None of this 'bottom-up' nonsense:
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
 " Flake8:
 autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
 
