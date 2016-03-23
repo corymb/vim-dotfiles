@@ -148,10 +148,6 @@ map <leader>bd :bd<CR>
 " Un-highlight last search:
 map <leader>z :noh<CR>
 
-" Add assertion error with keyboard shortcuts:
-map <leader>a Oassert False, 9<esc>:w<CR>
-map <leader>A oassert False, 9<esc>:w<CR>
-
 "################"
 " Misc Functions "
 "################"
@@ -213,6 +209,7 @@ nnoremap <silent> <F3> :call <SID>Mru_Window_Toggle()<CR>
 map <F4> :TagbarToggle<CR>
 let g:tagbar_foldlevel = 2
 let g:tagbar_autofocus = 1
+let g:tagbar_sort = 0
 
 " tComment:
 map <leader>cc :TComment<cr>
