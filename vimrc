@@ -243,6 +243,10 @@ nmap <leader>e cp%
 " vim-slime:
 let g:slime_target="tmux"
 
+" Markdown preview:
+let g:instant_markdown_autostart = 1
+set shell=bash\ -i
+
 " Remap ctrlp for command-t binding:
 nmap <leader>t :CtrlP<cr>
 nmap <leader>T :vs<cr><c-w><c-w>:CtrlP<cr>
