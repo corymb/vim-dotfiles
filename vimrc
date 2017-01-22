@@ -240,6 +240,9 @@ autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
 " Fireplace:
 nmap <leader>e cp%
 
+" vim-slime:
+let g:slime_target="tmux"
+
 " Remap ctrlp for command-t binding:
 nmap <leader>t :CtrlP<cr>
 nmap <leader>T :vs<cr><c-w><c-w>:CtrlP<cr>

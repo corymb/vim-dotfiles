@@ -21,9 +21,6 @@
 [submodule "bundle/rainbow-parens"]
 	path = bundle/rainbow-parens
 	url = git://github.com/kien/rainbow_parentheses.vim.git
-[submodule "bundle/fireplace"]
-	path = bundle/fireplace
-	url = git://github.com/tpope/vim-fireplace.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
@@ -83,3 +80,6 @@
 [submodule "bundle/bundle/vim-airline-themes"]
 	path = bundle/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "bundle/vim-slime"]
+	path = bundle/vim-slime
+	url = https://github.com/jpalardy/vim-slime.git
