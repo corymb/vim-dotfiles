@@ -158,8 +158,8 @@ map <leader>bd :bd<CR>
 " Un-highlight last search:
 map <leader>z :noh<CR>
 
-" Searching: 
-nnoremap <Leader><Space> :Ack!<Space>
+" Searching (include Python libraries in current venv): 
+nnoremap <expr> <Leader><Space> ":Ack!<Space> " . input("Ag: ") . " $PWD $VIRTUAL_ENV/lib/*/site-packages/<CR>"
 
 "################"
 " Misc Functions "
