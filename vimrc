@@ -159,7 +159,7 @@ map <leader>bd :bd<CR>
 map <leader>z :noh<CR>
 
 " Searching (include Python libraries in current venv): 
-nnoremap <expr> <Leader><Space> ":Ack!<Space> " . input("Ag: ") . " $PWD $VIRTUAL_ENV/lib/*/site-packages/<CR>"
+nnoremap <expr> <Leader><Space> ":Ack!<Space>\"" . input("Ag: ") . "\"<Space>.<Space>$VIRTUAL_ENV/lib/*/site-packages/<CR>"
 
 "################"
 " Misc Functions "
