@@ -114,6 +114,11 @@ cnoremap <C-K>        <C-U>
 " Tab completion and documentation
 au FileType python set omnifunc=pythoncomplete#Complete
 
+" Searching:
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 "#########################"
 " Custom Editor Shortcuts "
 "#########################"
@@ -153,6 +158,9 @@ map <leader>bd :bd<CR>
 " Un-highlight last search:
 map <leader>z :noh<CR>
 
+" Searching: 
+nnoremap <Leader><Space> :Ack!<Space>
+
 "################"
 " Misc Functions "
 "################"
@@ -168,17 +176,17 @@ autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.rb :call DeleteTrailingWS()
 
 " Add the virtualenv's site-packages to vim path:
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir,
-    'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
+" py << EOF
+" # import os.path
+" # import sys
+" # import vim
+" # if 'VIRTUAL_ENV' in os.environ:
+" #     project_base_dir = os.environ['VIRTUAL_ENV']
+" #     sys.path.insert(0, project_base_dir)
+" #     activate_this = os.path.join(project_base_dir,
+" #     'bin/activate_this.py')
+" #     execfile(activate_this, dict(__file__=activate_this))
+" # EOF
 
 "#########"
 " Plugins "
@@ -215,6 +223,7 @@ map <F4> :TagbarToggle<CR>
 let g:tagbar_foldlevel = 2
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
+let g:tagbar_show_line_numbers = 1
 
 " tComment:
 map <leader>cc :TComment<cr>

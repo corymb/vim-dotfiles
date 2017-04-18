@@ -83,3 +83,6 @@
 [submodule "bundle/vim-slime"]
 	path = bundle/vim-slime
 	url = https://github.com/jpalardy/vim-slime.git
+[submodule "bundle/jinja2-syntax"]
+	path = bundle/jinja2-syntax
+	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
