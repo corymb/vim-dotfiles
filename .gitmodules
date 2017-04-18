@@ -83,3 +83,6 @@
 [submodule "bundle/jinja2-syntax"]
 	path = bundle/jinja2-syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
