@@ -56,3 +56,16 @@ nmap <leader>s :w<cr>
 " Map arrows to switch between open buffers:
 map <right> :bn<cr>
 map <left> :bp<cr>
+
+"#########"
+" Plugins "
+"#########"
+
+" Turn filetype off for Pathogen:
+filetype off
+call pathogen#infect()
+call pathogen#helptags()
+filetype on
+
+" FZF:
+nmap <leader>t :FZF<cr>
