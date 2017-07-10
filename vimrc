@@ -67,5 +67,10 @@ call pathogen#infect()
 call pathogen#helptags()
 filetype on
 
+" NERDTree:
+map <F2> :NERDTreeToggle<cr>
+let NERDTreeQuitOnOpen = 1
+let NERDTreeIgnore=['\.pyc$']
+
 " FZF:
 nmap <leader>t :FZF<cr>

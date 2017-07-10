@@ -6,7 +6,7 @@
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = https://github.com/vim-scripts/The-NERD-tree.git
+	url = https://github.com/scrooloose/nerdtree.git
 	ignore = dirty
 [submodule "bundle/airline"]
 	path = bundle/airline
