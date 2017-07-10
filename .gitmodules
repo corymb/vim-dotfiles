@@ -10,7 +10,7 @@
 	ignore = dirty
 [submodule "bundle/airline"]
 	path = bundle/airline
-	url = https://github.com/bling/vim-airline.git
+	url = https://github.com/vim-airline/vim-airline-themes
 [submodule "bundle/clojure-static"]
 	path = bundle/clojure-static
 	url = git://github.com/guns/vim-clojure-static.git
@@ -95,3 +95,6 @@
 [submodule "bundle/fzf"]
 	path = bundle/fzf
 	url = https://github.com/junegunn/fzf
+[submodule "bundle/airline-themes"]
+	path = bundle/airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes

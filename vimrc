@@ -74,3 +74,8 @@ let NERDTreeIgnore=['\.pyc$']
 
 " FZF:
 nmap <leader>t :FZF<cr>
+
+" Airline:
+let g:airline_theme='solarized'
+let g:airline_powerline_fonts=1
+set laststatus=2
