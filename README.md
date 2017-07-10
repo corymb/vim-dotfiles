@@ -1,3 +1,6 @@
-# vim-dotfiles
+Vim Dotfiles
+############
 
-git clone --recursive git@github.com:disavowd/vim-dotfiles.git .vim && ln -s ~/.vim/vimrc ~/.vimrc 
+Just run:
+
+    git clone --recursive https://github.com/corymb/vim-dotfiles.git .vim && ln -s ~/.vim/vimrc ~/.vimrc 
