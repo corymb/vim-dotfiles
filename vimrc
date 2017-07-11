@@ -16,6 +16,10 @@ set number
 " Syntax highlighting (enable keeps colour settings):
 syntax enable
 
+"##########"
+" Settings "
+"##########"
+
 " Drops backwards compatibility for newer features:
 set nocompatible
 
@@ -26,6 +30,7 @@ filetype plugin indent on
 " set cindent
 " set autoindent
 
+set clipboard=unnamed
 
 " Vim command line history (used with: /,:,@):
 set history=1000
@@ -71,6 +76,11 @@ filetype on
 map <F2> :NERDTreeToggle<cr>
 let NERDTreeQuitOnOpen = 1
 let NERDTreeIgnore=['\.pyc$']
+
+" Searching:
+if executable('rg')
+  set grepprg=rg\ --vimgrep
+endif
 
 " FZF:
 nmap <leader>t :FZF<cr>
