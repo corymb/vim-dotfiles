@@ -77,6 +77,9 @@ map <F2> :NERDTreeToggle<cr>
 let NERDTreeQuitOnOpen = 1
 let NERDTreeIgnore=['\.pyc$']
 
+" MRU
+map <F3> :MRU<cr>
+
 " Searching:
 if executable('rg')
   set grepprg=rg\ --vimgrep
