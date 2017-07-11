@@ -58,6 +58,9 @@ let mapleader = ","
 " Fast saving:
 nmap <leader>s :w<cr>
 
+" Fast saving:
+nmap <leader>bd :bd<cr>
+
 " Map arrows to switch between open buffers:
 map <right> :bn<cr>
 map <left> :bp<cr>
