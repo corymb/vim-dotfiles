@@ -47,6 +47,15 @@ set viminfo=%,<800,'10,/50,:100,h,f0,n~/.vim/cache/.viminfo
 "           | + lines saved each register (old name for <, vi6.2)
 "           + save/restore buffer list
 
+" Disable backup/swap files:
+set nobackup
+set noswapfile
+
+" Auto-read if file is changed externally:
+set autoread
+
+" Disable 'no write since last change' warning:
+set hidden
 
 "#########################"
 " Custom Editor Shortcuts "
