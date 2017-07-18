@@ -57,6 +57,14 @@ set autoread
 " Disable 'no write since last change' warning:
 set hidden
 
+" Enforce sane backspace behaviour
+set bs=2
+
+" Searching:
+set smartcase     " case insensitive if lowercase
+set hlsearch      " Highlight search terms
+set incsearch     " Show search matches typed
+
 "#########################"
 " Custom Editor Shortcuts "
 "#########################"
@@ -107,3 +115,6 @@ set laststatus=2
 
 " tComment:
 map <leader>cc :TComment<cr>
+
+" Ack
+map <leader>f :Ack! 
